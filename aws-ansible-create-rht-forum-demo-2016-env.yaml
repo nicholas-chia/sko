@@ -22,8 +22,8 @@
   gather_facts: false
   connection: local
   vars:
-        - aws_region: sa-east-1
-        - aws_zone: sa-east-1a
+        - aws_region: ap-southeast-1
+        - aws_zone: ap-southeast-1a
         - name_zone: latam.forum.redhat.com
         - volume_type: gp2
   tasks:
