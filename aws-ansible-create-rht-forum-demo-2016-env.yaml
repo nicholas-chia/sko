@@ -312,10 +312,10 @@
       private_ip: 192.168.1.30
       termination_protection: no
       instance_tags:
-        Name: Locust
+        Name: sko_Locust
       exact_count: 1
       count_tag:
-        Name: Locust
+        Name: sko_Locust
       region: "{{ aws_region }}"
       vpc_subnet_id: "{{ subnet_id }}"
       zone: "{{ aws_zone }}"
@@ -346,10 +346,10 @@
       private_ip: 192.168.1.100
       termination_protection: no
       instance_tags:
-        Name: openshift-master
+        Name: sko_openshift-master
       exact_count: 1
       count_tag:
-        Name: openshift-master
+        Name: sko_openshift-master
       region: "{{ aws_region }}"
       vpc_subnet_id: "{{ subnet_id }}"
       zone: "{{ aws_zone }}"
@@ -380,10 +380,10 @@
       private_ip: 192.168.1.101
       termination_protection: no
       instance_tags:
-        Name: openshift-infra
+        Name: sko_openshift-infra
       exact_count: 1
       count_tag:
-        Name: openshift-infra
+        Name: sko_openshift-infra
       region: "{{ aws_region }}"
       vpc_subnet_id: "{{ subnet_id }}"
       zone: "{{ aws_zone }}"
@@ -414,10 +414,10 @@
       private_ip: 192.168.1.102
       termination_protection: no
       instance_tags:
-        Name: openshift-node1
+        Name: sko_openshift-node1
       exact_count: 1
       count_tag:
-        Name: openshift-node1
+        Name: sko_openshift-node1
       region: "{{ aws_region }}"
       vpc_subnet_id: "{{ subnet_id }}"
       zone: "{{ aws_zone }}"
@@ -445,10 +445,10 @@
       private_ip: 192.168.1.103
       termination_protection: no
       instance_tags:
-        Name: openshift-node2
+        Name: sko_openshift-node2
       exact_count: 1
       count_tag:
-        Name: openshift-node2
+        Name: sko_openshift-node2
       region: "{{ aws_region }}"
       vpc_subnet_id: "{{ subnet_id }}"
       zone: "{{ aws_zone }}"
@@ -472,10 +472,10 @@
       private_ip: 192.168.1.21
       termination_protection: no
       instance_tags:
-        Name: Ansible-Tower
+        Name: sko_Ansible-Tower
       exact_count: 1
       count_tag:
-        Name: Ansible-Tower
+        Name: sko_Ansible-Tower
       region: "{{ aws_region }}"
       vpc_subnet_id: "{{ subnet_id }}"
       zone: "{{ aws_zone }}"
@@ -502,10 +502,10 @@
       private_ip: 192.168.1.11
       termination_protection: no
       instance_tags:
-        Name: CF-Worker1
+        Name: sko_CF-Worker1
       exact_count: 1
       count_tag:
-        Name: CF-Worker1
+        Name: sko_CF-Worker1
       region: "{{ aws_region }}"
       vpc_subnet_id: "{{ subnet_id }}"
       zone: "{{ aws_zone }}"
@@ -532,10 +532,10 @@
       private_ip: 192.168.1.12
       termination_protection: no
       instance_tags:
-        Name: CF-Worker2
+        Name: sko_CF-Worker2
       exact_count: 1
       count_tag:
-        Name: CF-Worker2
+        Name: sko_CF-Worker2
       region: "{{ aws_region }}"
       vpc_subnet_id: "{{ subnet_id }}"
       zone: "{{ aws_zone }}"
@@ -566,10 +566,10 @@
       private_ip: 192.168.1.10
       termination_protection: no
       instance_tags:
-        Name: CF-VMDB
+        Name: sko_CF-VMDB
       exact_count: 1
       count_tag:
-        Name: CF-VMDB
+        Name: sko_CF-VMDB
       region: "{{ aws_region }}"
       vpc_subnet_id: "{{ subnet_id }}"
       zone: "{{ aws_zone }}"
