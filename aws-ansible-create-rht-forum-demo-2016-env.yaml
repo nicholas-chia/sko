@@ -300,7 +300,7 @@
       key_name: rht-forum-demo-2016-key
       group: locust-sec-group
       instance_type: t2.medium
-      image: ami-459a0729
+      image: ami-3002a853
       wait: yes
       wait_timeout: 500
       volumes:
@@ -330,7 +330,7 @@
       key_name: rht-forum-demo-2016-key
       group: openshift-master-sec-group
       instance_type: c3.2xlarge
-      image: ami-31c15c5d
+      image: ami-6703a904
       wait: yes
       wait_timeout: 500
       volumes:
@@ -364,7 +364,7 @@
       key_name: rht-forum-demo-2016-key
       group: openshift-infra-sec-group
       instance_type: c3.2xlarge
-      image: ami-33fc615f
+      image: ami-a20da7c1
       wait: yes
       wait_timeout: 500
       volumes:
@@ -398,7 +398,7 @@
       key_name: rht-forum-demo-2016-key
       group: openshift-nodes-sec-group
       instance_type: c3.2xlarge
-      image: ami-99c25ff5
+      image: ami-3102a852
       wait: yes
       wait_timeout: 500
       volumes:
@@ -429,7 +429,7 @@
       key_name: rht-forum-demo-2016-key
       group: openshift-nodes-sec-group
       instance_type: c3.2xlarge
-      image: ami-51fa673d
+      image: ami-0b0da768
       wait: yes
       wait_timeout: 500
       volumes:
@@ -460,7 +460,7 @@
       key_name: rht-forum-demo-2016-key
       group: ansible-sec-group
       instance_type: c4.xlarge
-      image: ami-5068fa3c
+      image: ami-0a02a869
       wait: yes
       wait_timeout: 500
       volumes:
@@ -490,7 +490,7 @@
       key_name: rht-forum-demo-2016-key
       group: cloudforms-sec-group
       instance_type: c4.xlarge
-      image: ami-3bfa6757
+      image: ami-850ca6e6
       wait: yes
       wait_timeout: 500
       volumes:
@@ -515,12 +515,12 @@
 #    wait_for: host={{ item.public_dns_name }} port=443 delay=60 timeout=320 state=started
 #    with_items: '{{cf_worker1.instances}}'
 
-  - name: Creating CloudForms Worker1 Instance
+  - name: Creating CloudForms Worker2 Instance
     ec2:
       key_name: rht-forum-demo-2016-key
       group: cloudforms-sec-group
       instance_type: c4.xlarge
-      image: ami-51f4693d
+      image: ami-3602a855
       wait: yes
       wait_timeout: 500
       volumes:
@@ -550,7 +550,7 @@
       key_name: rht-forum-demo-2016-key
       group: cloudforms-sec-group
       instance_type: c4.xlarge
-      image: ami-d7c05dbb
+      image: ami-970fa5f4
       wait: yes
       wait_timeout: 500
       volumes:
