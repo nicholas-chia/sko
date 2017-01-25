@@ -50,16 +50,16 @@
   - set_fact: vpc_id={{ vpc.vpc_id }}
   - set_fact: subnet_id={{ vpc.subnets[0].id }}
 
-  - name: Create an AWS Keypair
-    ec2_key: name="rht-forum-demo-2016-key" region={{ aws_region }}
-    register: rht_forum_demo_key
+#  - name: Create an AWS Keypair
+#    ec2_key: name="rht-forum-demo-2016-key" region={{ aws_region }}
+#    register: rht_forum_demo_key
 
-  - set_fact: private_key={{ rht_forum_demo_key.key.private_key }}
-    when: rht_forum_demo_key.key.private_key is defined
+#  - set_fact: private_key={{ rht_forum_demo_key.key.private_key }}
+#    when: rht_forum_demo_key.key.private_key is defined
 
-  - name: Write the new AWS Keypair into a file... /tmp/rht-forum-demo-2016-key.pem
-    copy: content={{ private_key }} dest="/tmp/rht-forum-demo-2016-key.pem" mode=0600
-    when: rht_forum_demo_key.changed
+#  - name: Write the new AWS Keypair into a file... /tmp/rht-forum-demo-2016-key.pem
+#    copy: content={{ private_key }} dest="/tmp/rht-forum-demo-2016-key.pem" mode=0600
+#    when: rht_forum_demo_key.changed
 
   - name: Create Locust Security Group
     ec2_group:
